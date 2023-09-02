@@ -1,0 +1,152 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "backend-collection",
+    "dateExported": "2023-09-02T06:46:42.001Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b6f5eb27-0c32-4117-b273-7289a865a854",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "create user",
+            "url": "http://localhost:5001/api/users/register/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-02T06:08:56.708Z",
+            "modified": "2023-09-02T06:10:30.836Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"venkat karthik\",\n  \"email\": \"karthikcon@gmail.com\",\n  \"password\": \"karthik\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3f8d6a5a-a7ab-44b2-b0a7-e42c233a46aa",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "login user",
+            "url": "http://localhost:5001/api/users/login/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-09-02T06:22:35.442Z",
+            "modified": "2023-09-02T06:25:51.319Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"karthikcon@gmail.com\",\n  \"password\": \"karthik\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "85bfe998-f546-45ce-a96b-8e8c7e97d517",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "get the current user",
+            "url": "http://localhost:5001/api/users/current/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-09-02T06:31:45.975Z",
+            "modified": "2023-09-02T06:42:39.981Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"karthikcon@gmail.com\",\n  \"password\": \"karthik\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidmVua2F0IGthcnRoaWsiLCJlbWFpbCI6ImthcnRoaWtjb25AZ21haWwuY29tIiwiaWQiOiI2NGYyZDFkNjFiMTQ0Njk4YWVjMTA0ODMifSwiaWF0IjoxNjkzNjM2OTI5LCJleHAiOjE2OTM2Mzc4Mjl9.XWHw1CwvEkK9Bo2rVwhxcJwOfokSqZuyM0yU7MpG6Kk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a79a1683-0737-4456-9106-b7eca77b1dad",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "create contact",
+            "url": "http://localhost:5001/api/contacts/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-09-02T06:34:42.579Z",
+            "modified": "2023-09-02T06:37:37.014Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Gryffendor\",\n  \"email\": \"theharry@gmail.com\",\n  \"phone\": \"1232567890\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidmVua2F0IGthcnRoaWsiLCJlbWFpbCI6ImthcnRoaWtjb25AZ21haWwuY29tIiwiaWQiOiI2NGYyZDFkNjFiMTQ0Njk4YWVjMTA0ODMifSwiaWF0IjoxNjkzNjM2MjczLCJleHAiOjE2OTM2MzcxNzN9.AGZ9GnfdJIcpQ9ysZ6hPyPSHz68sfVEyweZLWm4SGLU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe5948fc-9634-413e-b9f1-aeab58df79e4",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "get all contacts",
+            "url": "http://localhost:5001/api/contacts/",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-09-02T06:38:10.865Z",
+            "modified": "2023-09-02T06:39:11.434Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidmVua2F0IGthcnRoaWsiLCJlbWFpbCI6ImthcnRoaWtjb25AZ21haWwuY29tIiwiaWQiOiI2NGYyZDFkNjFiMTQ0Njk4YWVjMTA0ODMifSwiaWF0IjoxNjkzNjM2MjczLCJleHAiOjE2OTM2MzcxNzN9.AGZ9GnfdJIcpQ9ysZ6hPyPSHz68sfVEyweZLWm4SGLU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e12c1fe4-e2d3-4904-a6de-9398782c601d",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "update a contact",
+            "url": "http://localhost:5001/api/contacts/64f2d830ce20c9ad248e8902/",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-09-02T06:39:30.239Z",
+            "modified": "2023-09-02T06:43:31.616Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Gryffendor the great\",\n  \"email\": \"theharry@gmail.com\",\n  \"phone\": \"1230067890\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidmVua2F0IGthcnRoaWsiLCJlbWFpbCI6ImthcnRoaWtjb25AZ21haWwuY29tIiwiaWQiOiI2NGYyZDFkNjFiMTQ0Njk4YWVjMTA0ODMifSwiaWF0IjoxNjkzNjM2OTI5LCJleHAiOjE2OTM2Mzc4Mjl9.XWHw1CwvEkK9Bo2rVwhxcJwOfokSqZuyM0yU7MpG6Kk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "42a5f48c-92f9-44ea-864b-d23a65a1f666",
+            "colId": "2d8f7f6e-5cc6-4a5b-90f6-7e99e0872a92",
+            "containerId": "",
+            "name": "delete a contact",
+            "url": "http://localhost:5001/api/contacts/64f2d830ce20c9ad248e8902/",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-09-02T06:43:50.946Z",
+            "modified": "2023-09-02T06:45:40.766Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoidmVua2F0IGthcnRoaWsiLCJlbWFpbCI6ImthcnRoaWtjb25AZ21haWwuY29tIiwiaWQiOiI2NGYyZDFkNjFiMTQ0Njk4YWVjMTA0ODMifSwiaWF0IjoxNjkzNjM2OTI5LCJleHAiOjE2OTM2Mzc4Mjl9.XWHw1CwvEkK9Bo2rVwhxcJwOfokSqZuyM0yU7MpG6Kk"
+            },
+            "tests": []
+        }
+    ]
+}
